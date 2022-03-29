@@ -156,7 +156,7 @@ params:
             site:
 
             # Available values: summary, summary_large_image
-            card: summary
+            card: summary_large_image
 
     defaultImage:
         opengraph:
