@@ -12,4 +12,4 @@ draft: false
 
 下のTwitterのやつはテスト用
 
-{{< twitter_simple 1085870671291310081 >}}
+{{< twitter_simple tsurutaaaaaa_ 1508647583455256579 >}}

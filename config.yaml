@@ -3,7 +3,7 @@ module:
         - path: github.com/CaiJimmy/hugo-theme-stack/v3
           disable: false
 
-baseurl: https://blog.tsurutatakumi.info
+baseurl: /
 languageCode: en-us
 paginate: 5
 title: 東京回転寿司倶楽部のブログ
