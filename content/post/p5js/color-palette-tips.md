@@ -10,6 +10,8 @@ tags:
 draft: false
 ---
 
+## Coolors URLからカラーパレットを生成するプログラム
+
 p5js のプロジェクトでカラーパレットを生成するときに便利なツールの1つに [Coolors](https://coolors.co/palettes/trending) というサイトがあります。
 
 そこで生成したカラーパレットを以下のように定義するのはよくあるパターンだと思います。
@@ -32,9 +34,28 @@ watabo_shi さんのソースコードを読んだあとに気づいたのです
 ```js
 // refs: https://openprocessing.org/sketch/1528585
 const url = "https://coolors.co/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77"
-const palette = url.split('/')[3].split('-').map(c => '#' + c);
+
+// 処理内容
+// 1. url を / 区切りで配列に分割
+// 2. 1の配列から最後の要素(ここではカラーコード部分)を取得
+// 3. カラーコード文字列を - 区切りで配列に分割
+// 4. 3でできた配列の要素(例: d9ed92)それぞれを # と結合
+const palette = url.split('/').pop().split('-').map(c => '#' + c);
 ```
 
-あとはこのパレットを使って以下のようにいい感じにやります。
+これで最初に示したソースコードと同様のカラーパレット配列ができました。
+あとはこのカラーパレットを使って以下のようにいい感じにやります。
 
 {{< openprocessing 1530028 >}}
+
+## Reference
+
+- watabo_shiさんの作品のカラーパレット生成処理
+    - https://openprocessing.org/sketch/1528585
+- Array.prototype.pop()
+    - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+
+## 更新履歴
+
+- 2022-03-30
+    - カラーパレット生成プログラムをアップデート
