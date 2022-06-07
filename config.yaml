@@ -6,7 +6,7 @@ module:
 baseurl: /
 languageCode: en-us
 paginate: 5
-title: 東京回転寿司倶楽部のブログ
+title: Python & Go Web developer
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -186,7 +186,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/zztkm
           params:
               icon: brand-github
 
