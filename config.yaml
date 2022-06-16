@@ -25,10 +25,12 @@ hasCJKLanguage: false
 permalinks:
     post: /p/:slug/
     page: /:slug/
+    daily-report: /daily-report/:slug/
 
 params:
     mainSections:
         - post
+        - daily-report
     featuredImageField: image
     rssFullContent: true
     favicon:

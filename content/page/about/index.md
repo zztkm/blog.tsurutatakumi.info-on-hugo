@@ -17,6 +17,8 @@ menu:
 
 以下のような内容について記事を書いていく予定です(予定は未定)。
 
+- おれの日報
+  - [一覧](https://blog.tsurutatakumi.info/categories/日報/)
 - Python
 - Go
 - V lang

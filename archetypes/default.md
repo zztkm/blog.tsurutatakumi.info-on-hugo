@@ -1,10 +1,12 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: ""
 date: {{ .Date }}
+image: ""
 categories:
-    - "programming"
+    - ""
 tags:
-    - "p5js"
+    - "2022"
 draft: true
 ---
 
